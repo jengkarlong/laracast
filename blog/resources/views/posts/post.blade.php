@@ -4,8 +4,14 @@
             {{ $post->title }}
         </a>
     </h2>
-    <p class="blog-post-meta"> {{ $post->created_at->toFormattedDateString() }} </p>
-
+    <p class="blog-post-meta"> 
+        {{ $post->created_at->toFormattedDateString() }}
+        <br>
+        By {{ $post->user->name }}
+    </p>
+    <p>
     {{ $post->body }}
+    </p>
+
 
 </div>

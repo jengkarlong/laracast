@@ -4,7 +4,7 @@
       <a class="text-muted" href="#">Subscribe</a>
     </div>
     <div class="col-4 text-center">
-      <a class="blog-header-logo text-dark" href="#">Large</a>
+      <a class="blog-header-logo text-dark" href="/">Large</a>
     </div>
     <div class="col-4 d-flex justify-content-end align-items-center">
       <a class="text-muted" href="#">
@@ -14,7 +14,14 @@
           <line x1="21" y1="21" x2="15.8" y2="15.8"></line>
         </svg>
       </a>
-      <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+      @if (Auth::check())
+      <a class="btn btn-sm btn-outline-secondary" href="#">{{Auth::user()->name}}</a>
+      <a href="/posts/create" class='btn btn-sm btn-outline-secondary'>Create Post</a>
+      <a href="/logout" class='btn btn-sm btn-outline-secondary'>Logout</a>
+      @else
+      <a class="btn btn-sm btn-outline-secondary" href="/register">Sign up</a>
+      <a href="/login" class="btn btn-sm btn-outline-secondary">Login</a>
+      @endif
     </div>
   </div>
 </header>
