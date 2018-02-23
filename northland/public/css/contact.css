@@ -1,0 +1,69 @@
+/*
+*
+*** Contact  Page CSS
+*
+*/
+
+#contact {
+  position: relative;
+  margin-top: 50px 0;
+}
+
+#contact .contact-wrapper {
+  max-width: 500px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+#contact .contact-wrapper > div {
+  display: inline-block;
+  padding: 20px;
+}
+
+#contact .contact-wrapper > div h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#contact .contacts {
+  border-right: 1px solid #000000;
+  vertical-align: top;
+}
+
+#contact .contacts a {
+  display: block;
+}
+
+#contact .location {
+  margin: 50px 0;
+  text-align: center;
+}
+
+#contact .location h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#mapid {
+  height: 500px;
+  border: 10px double #e32929;
+  margin: 50px 15px;
+}
+
+@media only screen and (max-height: 600px) {
+  #mapid {
+    height: 80vh;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .contact-wrapper > div {
+    border-right: none;
+    width: 100%;
+    text-align: center;
+  }
+}
+

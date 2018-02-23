@@ -1,0 +1,84 @@
+/* 
+*
+*** FOOTER
+*/
+footer {
+  width: 100%;
+  min-height: 50vh;
+  position: relative;
+  background-color: #ffffff;
+  padding: 40px 25px;
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  .logo {
+    position: relative;
+    width: 300px;
+    min-height: 35vh;
+    text-align: center;
+    margin: 0 20px;
+    
+    a {
+      margin-top: 50px;
+    }
+    .follow-fb {
+      margin-top: 20px;
+      h2 {
+        margin-bottom: 20px;
+        font-size: 18px;
+      }
+    }
+  }
+  nav {
+    width: 300px;
+    margin-bottom: 50px;
+    margin: 0 30px;
+    
+    h2 {
+      font-size: 24px;
+    }
+  }
+  .contact {
+    width: 300px;
+    margin: 0 20px;
+    
+    .booking-btn {
+      position: relative;
+      background-color: $yellow;
+      border: none;
+   
+      box-shadow: 0px 3px 20px -10px #000000;
+    }
+    h2 {
+      margin-top: 20px;
+      font-size: 24px;
+    }
+  }
+  .copyright {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    color: #aaaaaa;
+    text-align: center;
+    font-family: $open-sans;
+    font-size: 12px;
+    padding: 10px 0;
+  }
+}
+
+
+@media only screen  and (max-width: 980px) {
+  footer {
+    .logo,
+    nav,
+    .contact {
+      width: 100%;
+      margin: 0;
+      
+    }
+  }
+}

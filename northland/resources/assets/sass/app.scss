@@ -1,0 +1,54 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600,800,900");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i,800');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Francois+One');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two:400,400i,700,700i');
+
+
+
+
+//import css
+@import "variables";
+@import "nav";
+@import "footer";
+
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+}
+
+#page-title {
+  font-family: $raleway;
+  font-size: 2em;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  .icon,svg {
+    font-size: 50%; 
+    vertical-align: middle;
+  }
+}
+ 
+.title2 {
+  font-family: $lobster;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: $red;
+
+}
+
+@media only screen and (min-width: 1023px) {
+  #page-title {
+    font-size: 4em;
+  }
+  .title2 {
+    font-size: 3em;
+    text-align: left;
+  }
+  
+}

@@ -1,0 +1,102 @@
+/* 
+*
+*** TOP NAVIGATION
+*/
+.logo {
+  position: relative;
+  margin: 20px 10px;
+  a {
+    display: block;
+    position: relative;
+    margin: 0 auto;    
+    img{
+      width: 250px;
+      height: 100px;
+    }
+  }
+} 
+
+
+
+#topnav {
+  background: none;
+  position: absolute;
+  height: 100px;
+  margin: 20px 0;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  .nav-list {
+    letter-spacing: 1px;
+    padding: 0 20px;
+    color: $black;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    font-weight: 800;
+    border-radius: 5px 5px 0 0;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+      background: none;
+      color: gold;
+    }
+  }
+  .navbar-burger {
+    color: $black;
+    span {
+      width: 20px;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+
+}
+
+
+
+//Query
+@media only screen and (max-width: 1024px){
+  #topnav .nav-list {
+    color: $black;
+    font-weight: 400;
+    text-transform: none;
+    padding: 20px;
+  }
+
+
+}
+
+//Query
+@media only screen and (max-width: 1024px){
+  #topnav .nav-list {
+    color: $black;
+    font-weight: 400;
+    text-transform: none;
+    padding: 20px;
+  }
+
+
+}
+
+//Query
+@media only screen and (max-width: 1024px){
+  #topnav .nav-list {
+    color: $black;
+    font-weight: 400;
+    text-transform: none;
+    padding: 20px;
+  }
+
+
+}
+
+//Query
+@media only screen and (max-width: 1024px){
+  #topnav .nav-list {
+    color: $black;
+    font-weight: 400;
+    text-transform: none;
+    padding: 20px;
+  }
+
+
+}

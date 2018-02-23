@@ -1,0 +1,82 @@
+#about-cover {
+  height: 80vh;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+#about {
+  position: relative;
+  margin: 40px 0 190px 0;
+  min-height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #000000;
+}
+
+#about > div {
+  max-width: 550px;
+  margin: 15px 20px;
+  height: 100%;
+}
+
+#about .buttons {
+  width: auto;
+  position: absolute;
+  height: 100px;
+  bottom: -50px;
+  z-index: 5;
+}
+
+#about .buttons > a {
+  border: none;
+  margin: 10px 15px;
+  color: #ffffff;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  -webkit-box-shadow: 0px 2px 15px -5px #000000;
+          box-shadow: 0px 2px 15px -5px #000000;
+}
+
+#about .buttons .contact {
+  background-color: #e32929;
+}
+
+#about .buttons .book {
+  background-color: #ffb80e;
+}
+
+#about h2 {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+#about h1 {
+  font-family: "Lobster Two", cursive;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#about p {
+  letter-spacing: 1px;
+  font-family: "Open Sans", sans-serif;
+}
+
+@media only screen and (max-width: 500px) {
+  .buttons > a {
+    margin: 15px auto !important;
+  }
+}
+

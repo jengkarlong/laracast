@@ -1,0 +1,35 @@
+
+
+#best-seller {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid;
+
+}
+
+.items {
+    position: relative;
+  .item {
+    max-width: 320px;
+    height: 350px;
+    position: relative;
+    border: 1px solid;
+    background-size: auto 80%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    .content {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      p {
+        display: none;
+      }
+      span {
+        position: absolute;
+        right: 10px;
+        bottom: 0;
+        font-size: 32px;
+      }
+    }
+  }
+}

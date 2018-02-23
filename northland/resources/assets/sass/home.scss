@@ -1,0 +1,353 @@
+
+@import "variables";
+//header carousel
+
+body {
+  background-color: #ffffff;
+}
+
+header {
+  width: 100%;
+  position: relative;
+  padding: 0;
+  margin-top: 100px;  
+  margin-bottom: 200px;
+  overflow-x: hidden;
+  .slide-item {
+    width: 100%;
+    position: absolute;
+    background-size:  auto 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+  }
+
+  .slide-text {
+    max-width: 600px;
+    position: absolute;
+    min-height: 200px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 30px 15px;
+    z-index: 1;
+    p, h2{
+      color: #ffffff;
+    }
+    h2 {
+      font-family: $raleway;
+      letter-spacing: 1px;
+      line-height: 1;
+      font-size: 2.5em;
+      font-weight: 700;
+        text-transform: uppercase;
+    }
+    p {
+      font-size: 0.9em;
+      font-family: $raleway;     
+      letter-spacing: 1px;
+      font-weight: 700;
+    }
+
+  }
+
+  .next-slide {
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 32px;
+    color: #aaaaaa;
+    opacity: 0.7;
+    bottom: 15px;
+    left: 15px;
+    right: auto;
+    cursor: pointer;
+    transition: left 0.2s ease-in-out;
+    outline: none;
+    animation: btn-left 1.5s infinite ease-in-out;
+    z-index: 5;
+    &:active {
+      left: 5px;
+    }
+  }
+  .item-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 1150px;
+    z-index: 0
+  }
+  .item-container:first-child {
+    left: 0;
+  }
+
+
+}
+
+.learn-more {
+  position: absolute;
+  bottom: -70px;
+  left: 15px;
+  transition: all 0.15s ease-in-out;
+  border: none;
+  background-color: $red;
+  color: #ffffff;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-weight: 800;
+  border-radius: 0;
+  box-shadow: -3px 3px 20px -5px #000000;
+}
+
+
+
+#upcoming {
+  width: 100%;
+  min-height: 50vh;
+  position: relative;
+  display: flex;
+  margin-bottom: 200px;
+  h2 {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-size: 1.2em;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: black;
+    padding: 40px 20px;
+    line-height: 1;
+    .at-nland {
+      font-family: $lobster;
+      font-size: 18px;
+      text-transform: none;
+    }
+   
+  }
+  .event-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin-top: 150px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+  }
+  .event-item {
+    width: 320px;
+    height: 380px;
+    margin: 15px auto;
+    position: relative;
+    background-size: auto 65%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 15px -3px #000000;
+    .event-content {
+      background-color: $yellow;
+      position: absolute;
+      width: 100%;
+      height: 35%;
+      bottom: 0;
+      padding: 10px 15px;
+      cursor: pointer;
+      h3 {
+        font-size: 1.3em;
+        position: absolute;
+        left: 20px;
+        width: 65%;
+        color: #ffffff;
+        font-weight: 600;
+        vertical-align: top;
+        &:hover {
+          color: #333333;
+        }
+      }
+      p {
+        width: 20%;
+        height: 70px;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        right: 20px;
+        margin: auto 0;
+        font-size: 1.2em;
+        font-weight: 700;
+        line-height: 1;
+        text-align: center;
+        padding: 5px;
+        color: #ffffff;
+        border: 2px solid #ffffff;
+      }
+    }
+  }
+  .learn-more {
+    width: 300px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: $red;
+    color: #ffffff;
+
+  }
+}
+
+.backpic {
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+//today's special
+#special-today {
+  max-width: 1020px;
+  min-height: 50vh;
+  position: relative;
+  margin: 150px auto;
+  border: 10px double $red;
+  padding: 15px;
+  h2 {
+    font-family: $lobster;
+    background-color: #ffffff;
+    width: 300px;    
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: -60px;
+    text-align: center;
+    font-size: 2.2em;
+    padding: 20px 0;
+    color: #000000;
+  }
+  .special {
+    width: 100%;
+    min-height: 50vh;
+    position: relative;
+    background-size: auto 100%;
+    background-position: center center;
+    color: #ffffff;
+    .special-content {
+      background-color: rgba(0,0,0,0.3);
+      min-height: 50vh;
+      padding: 20px 0;
+      text-align: center;
+
+      h3 {
+        margin-top: 10%;
+        font-family: $lobster;
+        font-weight: 800;
+        font-size: 3.5em;
+        line-height: 1;
+      }
+      p {
+        max-width: 300px;
+        margin: 0 auto;
+        margin-top: 30px;
+      }
+      span {
+        display: block;
+        font-size: 32px;
+        font-weight: 700;
+      }
+      
+    }
+ 
+  }
+}
+
+
+
+@media only screen and (min-width: 1280px) {
+
+  header .slide-item {
+    max-width: 1080px;
+    right: 150px;
+    margin-left: 50px;
+    background-position: top center;
+
+
+  }
+  header .slide-text {
+    background-color: rgba(255, 184, 14,0.85);
+    position: absolute;
+    min-height: 200px;
+    top: 50%;
+    right: 1080px;
+    transform: translateY(-50%);
+    box-shadow: -5px 5px 35px -10px #000000;
+    h2 {
+      font-size: 3em !important;
+    }
+    p {
+      font-size: 0.9em;
+      max-width: 800px;
+    }
+  }
+  header .next-slide {
+    right: 1250px;
+    left: auto;
+    &:active {
+      right: 1260px;
+      left: auto;
+    }
+  }
+  #upcoming{
+    .event-container {
+      justify-content: center;
+    }
+    .event-item {
+      margin: 15px 30px;
+    }
+    h2 {
+      font-size: 2.2em;
+    }
+  }
+
+  #special-today {
+
+    h2 {
+      
+    }
+    .special {
+      background-size: 100% auto;
+    }
+  }
+
+} 
+
+@media only screen and (min-width: 620px) {
+  #special-today {
+
+    .special {
+      background-size: 100% auto;
+    }
+  }
+}
+
+@keyframes btn-left {
+  0% {
+    transform: translateX(0px);
+  }
+  15% {
+    transform: translateX(-10px);
+  }
+  25% {
+    transform: translateX(-3px);
+  }
+  35% {
+    transform: translateX(-10px);
+  }
+  45% {
+    transform: translate(0px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+

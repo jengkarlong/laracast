@@ -1,0 +1,231 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600,800,900);@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i,800);@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900);@import url(https://fonts.googleapis.com/css?family=Francois+One);@import url(https://fonts.googleapis.com/css?family=Quicksand:400,500,700);@import url(https://fonts.googleapis.com/css?family=Lobster+Two:400,400i,700,700i);/* 
+*
+*** TOP NAVIGATION
+*/
+
+.logo {
+  position: relative;
+  margin: 20px 10px;
+}
+
+.logo a {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+}
+
+.logo a img {
+  width: 250px;
+  height: 100px;
+}
+
+#topnav {
+  background: none;
+  position: absolute;
+  height: 100px;
+  margin: 20px 0;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+#topnav .nav-list {
+  letter-spacing: 1px;
+  padding: 0 20px;
+  color: #231f20;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-weight: 800;
+  border-radius: 5px 5px 0 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#topnav .nav-list:hover {
+  background: none;
+  color: gold;
+}
+
+#topnav .navbar-burger {
+  color: #231f20;
+}
+
+#topnav .navbar-burger span {
+  width: 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 1024px) {
+  #topnav .nav-list {
+    color: #231f20;
+    font-weight: 400;
+    text-transform: none;
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #topnav .nav-list {
+    color: #231f20;
+    font-weight: 400;
+    text-transform: none;
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #topnav .nav-list {
+    color: #231f20;
+    font-weight: 400;
+    text-transform: none;
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #topnav .nav-list {
+    color: #231f20;
+    font-weight: 400;
+    text-transform: none;
+    padding: 20px;
+  }
+}
+
+/* 
+*
+*** FOOTER
+*/
+
+footer {
+  width: 100%;
+  min-height: 50vh;
+  position: relative;
+  background-color: #ffffff;
+  padding: 40px 25px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+footer .logo {
+  position: relative;
+  width: 300px;
+  min-height: 35vh;
+  text-align: center;
+  margin: 0 20px;
+}
+
+footer .logo a {
+  margin-top: 50px;
+}
+
+footer .logo .follow-fb {
+  margin-top: 20px;
+}
+
+footer .logo .follow-fb h2 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+footer nav {
+  width: 300px;
+  margin-bottom: 50px;
+  margin: 0 30px;
+}
+
+footer nav h2 {
+  font-size: 24px;
+}
+
+footer .contact {
+  width: 300px;
+  margin: 0 20px;
+}
+
+footer .contact .booking-btn {
+  position: relative;
+  background-color: #ffb80e;
+  border: none;
+  -webkit-box-shadow: 0px 3px 20px -10px #000000;
+          box-shadow: 0px 3px 20px -10px #000000;
+}
+
+footer .contact h2 {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+footer .copyright {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  color: #aaaaaa;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  padding: 10px 0;
+}
+
+@media only screen and (max-width: 980px) {
+  footer .logo,
+  footer nav,
+  footer .contact {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+}
+
+#page-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+}
+
+#page-title .icon,
+#page-title svg {
+  font-size: 50%;
+  vertical-align: middle;
+}
+
+.title2 {
+  font-family: "Lobster Two", cursive;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #e32929;
+}
+
+@media only screen and (min-width: 1023px) {
+  #page-title {
+    font-size: 4em;
+  }
+
+  .title2 {
+    font-size: 3em;
+    text-align: left;
+  }
+}
+

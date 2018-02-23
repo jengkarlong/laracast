@@ -1,0 +1,37 @@
+#best-seller {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid;
+}
+
+.items {
+  position: relative;
+}
+
+.items .item {
+  max-width: 320px;
+  height: 350px;
+  position: relative;
+  border: 1px solid;
+  background-size: auto 80%;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.items .item .content {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.items .item .content p {
+  display: none;
+}
+
+.items .item .content span {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  font-size: 32px;
+}
+
